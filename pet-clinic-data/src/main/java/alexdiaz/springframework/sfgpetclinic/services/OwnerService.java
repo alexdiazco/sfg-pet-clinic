@@ -2,13 +2,10 @@ package alexdiaz.springframework.sfgpetclinic.services;
 
 import alexdiaz.springframework.sfgpetclinic.model.Owner;
 
-import java.util.Set;
+public interface OwnerService extends CrudService<Owner,Long> {
 
-public interface OwnerService {
+    Owner findLastName(String name);
 
-    Owner findById(Long id);
 
-    Owner save(Owner owner);
 
-    Set<Owner> findAll();
 }
