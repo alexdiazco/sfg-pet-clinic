@@ -1,6 +1,6 @@
 package alexdiaz.springframework.sfgpetclinic.model;
 
-public class Speaciality extends BaseEntity {
+public class Speciality extends BaseEntity {
 
     private String description;
 
@@ -8,7 +8,7 @@ public class Speaciality extends BaseEntity {
         return description;
     }
 
-    public Speaciality setDescription(String description) {
+    public Speciality setDescription(String description) {
         this.description = description;
         return this;
     }
